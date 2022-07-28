@@ -1,0 +1,62 @@
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+
+  display: flex;
+  flex: 1;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: var(--caption);
+  }
+}
+
+.button {
+  padding: 1rem;
+  width: 40rem;
+  max-width: 100%;
+
+  color: var(--text);
+  background: none;
+  font-size: 18px;
+
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--primary), var(--gray)) 1;
+
+  margin-top: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  >svg {
+    font-size: 24px;
+    margin-right: 7px;
+  }
+
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: var(--background-light);
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 64px;
+
+  >img {
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+}
